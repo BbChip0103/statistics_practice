@@ -22,7 +22,6 @@ if __name__=='__main__':
     plt.figure(0)
 
     plt.subplot(5, 1, 1)
-    # plt.plot(wav_chainsaw_1, np.abs(fft_chainsaw_1))
     plt.plot([f_Binom(i, 5, 0.2) for i in range(x)])
     plt.title('B(5, 0.2)')
 
