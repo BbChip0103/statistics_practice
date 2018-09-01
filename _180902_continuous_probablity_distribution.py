@@ -18,10 +18,10 @@ if __name__=='__main__':
 
         for i in range(1, 11):
             plt.subplot(5, 2, i)
-            x_range = [0.1*j for j in range(-1000, 1000)]
-            y_range = [f_EXP(j, i) for j in x_range]
+            x_range = [0.1*j for j in range(-100, 100)]
+            y_range = [f_EXP(j, 0.5*i) for j in x_range]
             plt.plot(x_range, y_range)
-            plt.title('EXP({})'.format(i))
+            plt.title('EXP({})'.format(0.5*i))
             print(sum(y_range))
 
         plt.tight_layout()
